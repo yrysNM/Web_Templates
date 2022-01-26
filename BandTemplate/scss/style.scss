@@ -1,0 +1,38 @@
+@import "-mixis/_mixHeader.scss"; 
+@import "-mixis/_mixContentImg.scss";
+@import "-mixis/_mixFooter.scss";
+*{
+	&:before, &:after
+	{
+		box-sizing:  inherit;
+	}
+
+	transition: .3s linear;
+}
+
+html {
+	box-sizing: border-box;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	
+}
+
+
+body {
+	margin: 0;
+	padding:  0;
+	overflow-x: hidden;
+	font-family: "Lata", sans-serif;
+	font-size: 1rem;
+    line-height: 1.5;
+}
+
+@include mixHeader; 
+
+@include mixContent;
+
+.imgMap {
+	filter: grayscale(50%);
+}
+
+@include mixFooter;

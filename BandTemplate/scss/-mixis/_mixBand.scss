@@ -1,0 +1,56 @@
+@mixin mixTheBand {
+
+	.theBand {
+		width: 800px;
+		padding: 64px 16px;
+		margin: 0 auto;
+		
+		.textBand {
+			display: flex;
+			flex-direction: column; 
+			align-items: center;
+			
+			h2{
+				font-family: "Segoe UI",Arial,sans-serif;
+			    font-weight: 300;
+			    font-size:  2rem;
+			    letter-spacing: 3px;
+			    text-transform: uppercase;
+			    margin: 10px 0;
+			}
+
+			.justText {
+				color: darken(#ccc, 30%);
+			}
+
+			.text {
+				font-size: 1rem;
+	   		    line-height: 1.5;
+			}
+		}
+
+		.block1 {
+			padding: 32px 0;
+		    width: auto;
+		    text-align: center;
+		    display: flex;
+		    flex-direction: row;
+		    flex-wrap: nowrap;
+		    justify-content: space-between;
+			.flPos {
+
+				.beginTop {
+					
+					p {
+						font-size: 1rem;				
+					}
+				}
+				.blImg {
+					border-radius: 5px;
+				}
+			}
+
+		}
+
+	}
+}

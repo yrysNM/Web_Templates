@@ -1,0 +1,339 @@
+* {
+  transition: .3s linear; }
+  *:before, *:after {
+    box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Lata", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5; }
+
+header {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  position: fixed;
+  z-index: 200;
+  height: 48px; }
+  header nav {
+    display: flex;
+    flex-flow: row nowrap; }
+    header nav .icons.Iconhidden {
+      display: none; }
+    header nav .links {
+      color: #fff;
+      padding: 12px 24px;
+      text-transform: none;
+      text-decoration: none;
+      font-size: 1rem; }
+      header nav .links:hover {
+        background-color: #ccc; }
+    header nav .dropDown {
+      border: none;
+      background: none; }
+      header nav .dropDown:hover .btnMore {
+        background-color: #ccc; }
+      header nav .dropDown:hover .dropContent {
+        display: block; }
+      header nav .dropDown .btnMore {
+        background: none;
+        color: #fff;
+        border: none;
+        padding: 16px 24px;
+        font-size: 1rem; }
+        header nav .dropDown .btnMore i {
+          margin-left: 5px; }
+      header nav .dropDown .dropContent {
+        display: none;
+        width: 13rem;
+        background: #fff;
+        box-shadow: 0 0 10px #fff; }
+        header nav .dropDown .dropContent a {
+          display: block;
+          font-size: 13px;
+          text-decoration: none;
+          color: #000;
+          padding: 5px 5px 3px 7px; }
+          header nav .dropDown .dropContent a:hover {
+            background-color: #ccc; }
+    header nav .iconSearch {
+      position: absolute;
+      right: 0;
+      padding: 12px 24px;
+      color: inherit; }
+      header nav .iconSearch:hover {
+        background-color: #ff3333; }
+
+.content .blockImg .bgImg {
+  /* min-height: 100vmin; */ }
+  .content .blockImg .bgImg .img {
+    background-image: url("../../../images/la.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: inline-block;
+    width: 100%;
+    height: auto; }
+    .content .blockImg .bgImg .img .size {
+      min-height: 90vmin; }
+    .content .blockImg .bgImg .img .bottomText {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 530px;
+      margin: 32px auto; }
+      .content .blockImg .bgImg .img .bottomText h3, .content .blockImg .bgImg .img .bottomText p {
+        color: #fff;
+        text-shadow: 1px 3px 10px rgba(153, 153, 153, 0.3);
+        background: none;
+        border: none;
+        margin: 5px;
+        z-index: 100; }
+  .content .blockImg .bgImg .img1 {
+    background-image: url("https://d49r1np2lhhxv.cloudfront.net/www/admin/uploads/images/Top50MusicFestivalsintheWorld_Dekmantel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: inline-block;
+    width: 100%;
+    height: auto; }
+    .content .blockImg .bgImg .img1 .size {
+      min-height: 90vmin; }
+    .content .blockImg .bgImg .img1 .bottomText {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 530px;
+      margin: 32px auto; }
+      .content .blockImg .bgImg .img1 .bottomText h3, .content .blockImg .bgImg .img1 .bottomText p {
+        color: #fff;
+        text-shadow: 1px 3px 10px rgba(153, 153, 153, 0.3);
+        background: none;
+        border: none;
+        margin: 5px;
+        z-index: 100; }
+  .content .blockImg .bgImg .img2 {
+    background-image: url("https://cms.qz.com/wp-content/uploads/2021/09/AJR-09976-e1631555864197.jpg?quality=75&strip=all&w=1200&h=900&crop=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: inline-block;
+    width: 100%;
+    height: auto; }
+    .content .blockImg .bgImg .img2 .size {
+      min-height: 90vmin; }
+    .content .blockImg .bgImg .img2 .bottomText {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 530px;
+      margin: 32px auto; }
+      .content .blockImg .bgImg .img2 .bottomText h3, .content .blockImg .bgImg .img2 .bottomText p {
+        color: #fff;
+        text-shadow: 1px 3px 10px rgba(153, 153, 153, 0.3);
+        background: none;
+        border: none;
+        margin: 5px;
+        z-index: 100; }
+
+.content .theBand {
+  width: 800px;
+  padding: 64px 16px;
+  margin: 0 auto; }
+  .content .theBand .textBand {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .content .theBand .textBand h2 {
+      font-family: "Segoe UI",Arial,sans-serif;
+      font-weight: 300;
+      font-size: 2rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin: 10px 0; }
+    .content .theBand .textBand .justText {
+      color: gray; }
+    .content .theBand .textBand .text {
+      font-size: 1rem;
+      line-height: 1.5; }
+  .content .theBand .block1 {
+    padding: 32px 0;
+    width: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between; }
+    .content .theBand .block1 .flPos .beginTop p {
+      font-size: 1rem; }
+    .content .theBand .block1 .flPos .blImg {
+      border-radius: 5px; }
+
+.content .tourDates {
+  width: 100%;
+  color: #fff;
+  background-color: black; }
+  .content .tourDates .mainContents {
+    width: 800px;
+    margin: 0 auto;
+    padding: 64px 16px; }
+    .content .tourDates .mainContents .topText {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .content .tourDates .mainContents .topText h2 {
+        font-family: "Segoe UI",Arial,sans-serif;
+        font-weight: 300;
+        font-size: 2rem;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin: 10px 0; }
+      .content .tourDates .mainContents .topText .justText {
+        color: gray;
+        opacity: 0.6; }
+    .content .tourDates .mainContents .listDate ul {
+      list-style: none;
+      width: 100%;
+      background-color: #fff;
+      color: gray;
+      padding: 0; }
+      .content .tourDates .mainContents .listDate ul li {
+        padding: 8px 16px;
+        border-bottom: 0.3px solid rgba(0, 0, 0, 0.3); }
+        .content .tourDates .mainContents .listDate ul li .soldOut {
+          margin-left: 16px;
+          padding: 5px 8px;
+          color: #fff;
+          background-color: #f44336; }
+        .content .tourDates .mainContents .listDate ul li .haveTic {
+          float: right;
+          border-radius: 50%;
+          padding: 1px 8px;
+          background: #000;
+          margin-right: 16px; }
+    .content .tourDates .mainContents .block2 {
+      width: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 8px;
+      color: #000; }
+      .content .tourDates .mainContents .block2 .bodyBlock {
+        margin: 10px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(253, 253, 253, 0.4); }
+        .content .tourDates .mainContents .block2 .bodyBlock .img {
+          opacity: 1;
+          background-color: #000; }
+          .content .tourDates .mainContents .block2 .bodyBlock .img img {
+            width: 100%;
+            border-radius: 8px;
+            background-size: cover;
+            background-size: center center; }
+            .content .tourDates .mainContents .block2 .bodyBlock .img img:hover {
+              background: rgba(0, 0, 0, 0.3);
+              opacity: 0.6; }
+      .content .tourDates .mainContents .block2 .textBlock {
+        top: -13px;
+        position: relative; }
+        .content .tourDates .mainContents .block2 .textBlock .posText {
+          /* position: absolute; */
+          padding: 0.01em 1rem;
+          background-color: #fff; }
+          .content .tourDates .mainContents .block2 .textBlock .posText .country {
+            font-weight: 700; }
+          .content .tourDates .mainContents .block2 .textBlock .posText .date {
+            color: gray; }
+          .content .tourDates .mainContents .block2 .textBlock .posText .btnTic {
+            padding: 12px 16px;
+            background: #000;
+            color: #fff;
+            margin-bottom: 16px;
+            border: none; }
+            .content .tourDates .mainContents .block2 .textBlock .posText .btnTic:hover {
+              background: #ccc; }
+
+.content .contact {
+  width: 800px;
+  margin: 0 auto;
+  padding: 64px 16px; }
+  .content .contact .justContacts .topText {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .content .contact .justContacts .topText h2 {
+      font-family: "Segoe UI",Arial,sans-serif;
+      font-weight: 300;
+      font-size: 2rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin: 10px 0; }
+    .content .contact .justContacts .topText .justText {
+      color: gray; }
+  .content .contact .justContacts .tgLeftRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 32px 0; }
+    .content .contact .justContacts .tgLeftRight .leftInfo .list {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      flex-direction: row;
+      font-weight: 700;
+      font-size: 1.2rem; }
+      .content .contact .justContacts .tgLeftRight .leftInfo .list p {
+        margin: 0 5px;
+        font-weight: 400; }
+    .content .contact .justContacts .tgLeftRight .rightInfo form .info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0 0 8px 0;
+      box-sizing: border-box; }
+      .content .contact .justContacts .tgLeftRight .rightInfo form .info .inputName {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        margin-right: 8px; }
+      .content .contact .justContacts .tgLeftRight .rightInfo form .info .inputEmail {
+        width: 100%;
+        padding: 8px;
+        margin-left: 8px;
+        border: 1px solid #ccc; }
+    .content .contact .justContacts .tgLeftRight .rightInfo form .inputMessage {
+      width: 100%;
+      padding: 8px 0;
+      text-indent: 8px;
+      border: 1px solid #ccc; }
+    .content .contact .justContacts .tgLeftRight .rightInfo form .submitBtn {
+      float: right;
+      padding: 12px 16px;
+      background: #000;
+      color: #fff;
+      margin: 16px 0;
+      border: none;
+      text-transform: uppercase; }
+      .content .contact .justContacts .tgLeftRight .rightInfo form .submitBtn:hover {
+        background: #ccc; }
+
+.imgMap {
+  filter: grayscale(50%); }
+
+footer {
+  padding: 64px 16px;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #ccc; }

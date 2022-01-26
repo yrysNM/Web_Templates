@@ -1,0 +1,126 @@
+@mixin mixTheDate {
+	.tourDates {
+		width: 100%;
+		color: #fff;
+		background-color: darken(#000, 5%);
+
+		.mainContents {
+			width: 800px;
+			margin: 0 auto;
+			padding: 64px 16px;
+
+
+			.topText{
+				display: flex;
+				flex-direction: column; 
+				align-items: center;
+				h2 {
+				   font-family: "Segoe UI",Arial,sans-serif;
+					font-weight: 300; 
+					font-size: 2rem;
+					letter-spacing: 3px; 
+					text-transform: uppercase; 
+					margin: 10px 0;
+				}
+
+				.justText {
+					color: darken(#ccc, 30%);
+					opacity: 0.6;
+				} 
+			}
+
+			.listDate {
+				ul {
+					list-style: none;
+					width: 100%;
+					background-color: #fff;
+					color: darken(#ccc, 30%);
+					padding: 0;
+					li {
+						padding: 8px 16px;
+						border-bottom: 0.3px solid rgba(0, 0, 0, 0.3);
+						
+						.soldOut {
+							margin-left: 16px;
+							padding: 5px 8px;
+							color: #fff;
+							background-color: #f44336; 
+						}
+
+						.haveTic {
+							float: right;
+							border-radius: 50%;
+							padding: 1px 8px;
+							background: #000;
+							margin-right: 16px;
+						}
+					}
+				}
+			}
+
+			.block2 {
+				width: auto;
+
+				display: flex;
+				flex-direction:	row; 
+				justify-content: space-between;
+				padding:  0 8px;
+				color: #000;
+
+				.bodyBlock {
+					margin: 10px;
+						background-color: #fff;
+					    border-radius: 8px;
+						box-shadow: 0 0 15px rgba(253, 253, 253, 0.4);
+					.img {
+						
+						opacity: 1;
+						background-color:#000;
+						img{
+							width: 100%; 
+							border-radius: 8px;
+							background-size: cover; 
+							background-size: center center; 
+
+							&:hover {
+								background:rgba(0, 0 , 0, 0.3);
+								opacity: 0.6;
+							}
+						}
+					}
+				}
+
+				.textBlock {
+					    top: -13px;
+					    position: relative;
+					.posText {
+						/* position: absolute; */
+						padding: 0.01em 1rem;
+						background-color: #fff;
+					   .country{
+					   	 font-weight: 700;
+
+					   }
+
+					   .date {
+					   		color: darken(#ccc, 30%);
+					   }
+
+					   .btnTic {
+					   	 padding: 12px 16px;
+					   	 background: #000;
+					   	 color: #fff;
+					   	 margin-bottom: 16px;
+					   	 border: none;
+					   	 &:hover {
+					   	 	background: #ccc;
+					   	 }
+					   }
+
+					}
+				}
+
+			}
+		}
+	}
+}

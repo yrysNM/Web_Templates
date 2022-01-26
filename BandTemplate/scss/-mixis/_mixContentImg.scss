@@ -1,0 +1,120 @@
+@import "_mixBand.scss";
+@import "_mixTheDate.scss";
+@import "_mixContact.scss";
+@mixin mixContent {
+	.content {
+		.blockImg
+		{
+			.bgImg {
+				/* min-height: 100vmin; */
+				.img
+				{
+					background-image: url("../../../images/la.jpg");
+					background-repeat: no-repeat;
+					background-size: cover; 
+					background-position: center center; 
+					display: inline-block;
+					width: 100%;
+					height: auto;
+
+					.size {
+						min-height: 90vmin;
+					}
+
+					.bottomText {
+						display: flex; 
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						width: 530px;
+						margin: 32px auto;
+						h3, p {
+							color: #fff;
+							text-shadow: 1px 3px 10px rgba(153, 153, 153, 0.3);
+							background: none;
+							border: none;
+							margin: 5px;
+							z-index: 100;
+						}
+						
+
+					}
+				}
+
+				.img1
+				{
+					background-image: url("https://d49r1np2lhhxv.cloudfront.net/www/admin/uploads/images/Top50MusicFestivalsintheWorld_Dekmantel.jpg");
+					background-repeat: no-repeat;
+					background-size: cover; 
+					background-position: center center; 
+					display: inline-block;
+					width: 100%;
+					height: auto;
+
+					.size {
+						min-height: 90vmin;
+					}
+
+					.bottomText {
+						display: flex; 
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						width: 530px;
+						margin: 32px auto;
+						h3, p {
+							color: #fff;
+							text-shadow: 1px 3px 10px rgba(153, 153, 153, 0.3);
+							background: none;
+							border: none;
+							margin: 5px;
+							z-index: 100;
+						}
+						
+
+					}
+				}
+
+				.img2
+				{
+					background-image: url("https://cms.qz.com/wp-content/uploads/2021/09/AJR-09976-e1631555864197.jpg?quality=75&strip=all&w=1200&h=900&crop=1");
+					background-repeat: no-repeat;
+					background-size: cover; 
+					background-position: center center; 
+					display: inline-block;
+					width: 100%;
+					height: auto;
+
+					.size {
+						min-height: 90vmin;
+					}
+
+					.bottomText {
+						display: flex; 
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						width: 530px;
+						margin: 32px auto;
+						h3, p {
+							color: #fff;
+							text-shadow: 1px 3px 10px rgba(153, 153, 153, 0.3);
+							background: none;
+							border: none;
+							margin: 5px;
+							z-index: 100;
+						}
+						
+
+					}
+				}
+			}
+		}
+
+		@include mixTheBand;
+		@include mixTheDate; 
+		@include mixContact;
+	}
+
+
+}

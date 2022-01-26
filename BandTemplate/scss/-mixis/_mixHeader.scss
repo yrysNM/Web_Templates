@@ -1,0 +1,93 @@
+@mixin mixHeader {
+	header {
+		width: 100%;
+		background: #000;
+		color: #fff;
+		position: fixed;
+		z-index: 200;
+		height: 48px;
+		nav {
+			display: flex;
+			flex-flow: row nowrap;
+
+			.icons
+			{
+
+				&.Iconhidden {
+					display: none;
+				}
+			}
+
+			.links {
+				color: #fff;
+				padding: 12px 24px;
+				text-transform: none;
+				text-decoration: none;
+				font-size: 1rem;
+				&:hover{
+					background-color: #ccc; 
+				}
+			}
+
+			.dropDown {
+				border:none;
+				background: none;
+				    
+				 &:hover {
+				    	.btnMore {
+				    		background-color: #ccc;
+				    	}
+
+				    	.dropContent {
+				    		display: block;
+				    	}
+				    }
+
+				.btnMore  {
+					background: none;
+				    color: #fff;
+				    border: none;
+					padding: 16px 24px;
+				 
+				    font-size: 1rem;
+
+				    i {margin-left: 5px;}
+				    
+				   
+				}
+				
+				.dropContent {
+				    display: none;
+				 
+		    		width: 13rem;
+				    background: #fff;
+				    box-shadow: 0 0 10px #fff;
+		    		a{
+		    			display: block;
+		    			font-size: 13px;
+		    			text-decoration: none; 
+		    			color: #000;
+		    			padding: 5px 5px 3px 7px;
+
+		    			&:hover {
+		    				background-color: #ccc;
+		    			}
+		    		}
+				}
+			}
+
+
+			.iconSearch {
+				position: absolute;
+				right:  0;
+				padding: 12px 24px;
+				color: inherit;
+
+				&:hover{
+					background-color: lighten(red, 10%);
+				}
+			}
+		}
+	}
+
+}
