@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+  transition: .3s linear; }
+
+html {
+  font-size: 1rem;
+  line-height: 1.5; }
+
+body {
+  font-family: "Times New Roman", Georgia, Serif;
+  letter-spacing: 5px;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0; }
+
+header {
+  width: 100%;
+  padding: 8px 20px;
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  letter-spacing: 4px; }
+  header .topHead {
+    padding: 8px 16px; }
+    header .topHead:hover {
+      background-color: #ccc; }
+  header .listsite {
+    display: flex; }
+    header .listsite .list {
+      padding: 8px 16px; }
+      header .listsite .list a {
+        text-decoration: none;
+        color: #000; }
+      header .listsite .list:hover {
+        background-color: #ccc; }
+
+content .mainCon .img {
+  background-image: url("../../../images/hamburger.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block;
+  width: auto;
+  height: auto; }
+  content .mainCon .img .sizeimg {
+    width: 100vw;
+    min-height: 90vmin; }
+  content .mainCon .img .text {
+    padding: 3px 24px; }
+    content .mainCon .img .text p {
+      margin: 5px 0;
+      font-size: 36px;
+      font-family: "Playfair Display";
+      letter-spacing: 5px;
+      color: #58595d; }
+
+content .sizeScreen {
+  max-width: 1100px;
+  margin: 0 auto; }
+  content .sizeScreen .block1 {
+    padding: 64px 0; }
+    content .sizeScreen .block1 .bodyBocks {
+      display: flex;
+      flex-flow: row nowrap; }
+      content .sizeScreen .block1 .bodyBocks .leftBlock {
+        padding: 12px 24px; }
+        content .sizeScreen .block1 .bodyBocks .leftBlock img {
+          max-width: 100%;
+          height: auto;
+          opacity: 0.75; }
+      content .sizeScreen .block1 .bodyBocks .rightBlock {
+        padding: 12px 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%; }
+        content .sizeScreen .block1 .bodyBocks .rightBlock .headText {
+          font-family: "Playfair Display";
+          text-align: center; }
+          content .sizeScreen .block1 .bodyBocks .rightBlock .headText h1 {
+            letter-spacing: 5px;
+            font-weight: 400;
+            margin: 10px 0; }
+          content .sizeScreen .block1 .bodyBocks .rightBlock .headText .his {
+            font-weight: 400;
+            margin-top: 55px;
+            font-size: 18px;
+            margin-bottom: 10px; }
+        content .sizeScreen .block1 .bodyBocks .rightBlock .text {
+          font-family: "Playfair Display"; }
+          content .sizeScreen .block1 .bodyBocks .rightBlock .text .p1 {
+            letter-spacing: 0;
+            font-size: 1.1rem;
+            padding-bottom: 10px; }
+            content .sizeScreen .block1 .bodyBocks .rightBlock .text .p1 span {
+              padding: 5px;
+              background-color: #ccc; }
+          content .sizeScreen .block1 .bodyBocks .rightBlock .text .p2 {
+            padding-top: 10px;
+            opacity: 0.60;
+            letter-spacing: 1px;
+            font-size: 1.1rem; }
+  content .sizeScreen .line {
+    width: 100%;
+    height: 0.3px;
+    background: rgba(0, 0, 0, 0.1);
+    margin: 20px 0; }
+
+content .sizeScreen {
+  max-width: 1100px;
+  margin: 0 auto; }
+  content .sizeScreen .block2 {
+    padding: 64px 0; }
+    content .sizeScreen .block2 .bodyBocks {
+      display: flex;
+      flex-flow: row nowrap; }
+      content .sizeScreen .block2 .bodyBocks .leftBlock {
+        padding: 12px 24px; }
+        content .sizeScreen .block2 .bodyBocks .leftBlock .headText {
+          font-family: "Playfair Display";
+          text-align: center; }
+          content .sizeScreen .block2 .bodyBocks .leftBlock .headText h1 {
+            letter-spacing: 5px;
+            font-weight: 400;
+            margin: 10px 0; }
+        content .sizeScreen .block2 .bodyBocks .leftBlock .text {
+          font-family: "Playfair Display"; }
+          content .sizeScreen .block2 .bodyBocks .leftBlock .text h3 {
+            letter-spacing: 3px;
+            font-weight: 400;
+            margin-top: 50px;
+            /* padding-bottom: 5px; */ }
+          content .sizeScreen .block2 .bodyBocks .leftBlock .text p {
+            letter-spacing: 1px;
+            opacity: 0.60; }
+      content .sizeScreen .block2 .bodyBocks .rightBlock {
+        padding: 12px 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%; }
+        content .sizeScreen .block2 .bodyBocks .rightBlock img {
+          max-width: 100%;
+          height: auto;
+          opacity: 0.75; }
+  content .sizeScreen .line {
+    width: 100%;
+    height: 0.3px;
+    background: rgba(0, 0, 0, 0.1);
+    margin: 20px 0; }
+  content .sizeScreen .Contact {
+    display: flex;
+    flex-direction: column;
+    margin: 10 0;
+    padding: 64px 0; }
+    content .sizeScreen .Contact .text {
+      font-size: 0.9rem;
+      margin: 15px 0;
+      letter-spacing: 1px; }
+      content .sizeScreen .Contact .text .info {
+        color: #607d8b;
+        font-weight: 600;
+        padding: 2px 0;
+        font-size: 1.12rem; }
+      content .sizeScreen .Contact .text form .blockInput {
+        margin: 15px 0; }
+        content .sizeScreen .Contact .text form .blockInput input {
+          padding: 16px 8px;
+          font-size: 1rem;
+          width: 100%;
+          border: none;
+          border-bottom: 1px solid rgba(153, 153, 153, 0.2); }
+      content .sizeScreen .Contact .text form button {
+        padding: 8px 16px;
+        margin: 16px 0;
+        background: #F1F1F1;
+        border: none;
+        text-transform: uppercase; }
+        content .sizeScreen .Contact .text form button:hover {
+          background: #bebebe; }
+
+footer {
+  text-align: center; }
+  footer .text {
+    letter-spacing: 0;
+    padding: 32px;
+    background: #F1F1F1; }

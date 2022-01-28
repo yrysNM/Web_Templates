@@ -1,0 +1,32 @@
+@import "mixins/_mixinHead.scss";
+@import "mixins/_mixinContent.scss";
+
+* {
+	box-sizing: border-box; 
+	transition: .3s linear;
+}
+
+html {
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+body{
+	font-family: "Times New Roman", Georgia, Serif;
+	letter-spacing: 5px;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+@include  mixHead;
+@include mixContent;
+
+footer {
+	text-align: center;
+	.text{
+		letter-spacing: 0;
+		padding:  32px;
+		background: #F1F1F1;
+	}
+}

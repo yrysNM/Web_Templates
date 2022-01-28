@@ -1,0 +1,41 @@
+@import "_mixinBlock1.scss";
+@import "_mixinBlock2.scss";
+
+
+@mixin mixContent {
+	content {
+		.mainCon {
+
+			.img{
+				background-image: url("../../../images/hamburger.jpg");
+				background-size: cover; 
+				background-repeat: no-repeat;
+				background-position: center center;
+
+				display: inline-block;
+				width: auto;
+				height: auto;
+
+				.sizeimg {
+					width: 100vw;
+					min-height: 90vmin;	
+				}
+
+				.text {
+					padding: 3px 24px;
+					p {
+						margin: 5px 0;
+						font-size: 36px;
+						font-family: "Playfair Display";
+						letter-spacing: 5px;
+						color: #58595d; 
+					}
+				}
+
+			}
+		}
+
+		@include mixBlock1;
+		@include mixBlock2;
+	}
+}

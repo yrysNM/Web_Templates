@@ -1,0 +1,51 @@
+@mixin mixContact {
+	.Contact {
+		display: flex;
+		flex-direction: column; 
+		margin: 10 0;
+		padding: 64px 0;
+		.text {
+			font-size: 0.9rem;
+			margin: 15px 0;
+			letter-spacing: 1px;
+
+		
+
+			.info {
+				color: #607d8b;
+				font-weight: 600;
+				padding: 2px 0;
+				font-size: 1.12rem;
+			}
+
+			form {
+				.blockInput {
+					margin: 15px 0;
+					input {
+						padding: 16px 8px;
+						font-size: 1rem;
+						width: 100%;
+						border: none;
+						border-bottom: 1px solid rgba(153, 153, 153, 0.2);
+					}
+				}
+
+				button {
+					padding: 8px 16px;
+					margin: 16px 0;
+					background: #F1F1F1;
+					border:none;
+					text-transform: uppercase;
+					&:hover {
+
+						background: darken(#F1F1F1, 20%); 
+					}
+				}
+			}
+			
+
+
+		}
+	}
+
+}
