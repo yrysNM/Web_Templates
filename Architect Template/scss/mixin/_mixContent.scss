@@ -1,0 +1,67 @@
+@import "_mixProjects.scss";
+@import "_mixAbout.scss";
+@import "_mixContant.scss";
+
+@mixin _mixContent 
+{
+	.content 
+	{
+
+		.contentTop
+		{
+			width: 100vw;
+			min-height: 100vmin;
+			span 
+			{
+				background-image: url("../../../images/architect.jpg"); 
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center center;
+				display: inline-block;
+				width: 100%;
+				min-height: auto;
+				.sizeImg 
+				{
+					min-height: 100vmin;
+				}	
+				.posCen 
+				{
+					position: relative;
+				   
+				    top: -10rem;
+					.cenText 
+					{
+						font-size: 36px; 
+						text-align: center; 
+						margin: 10px 0;
+						display: flex;
+						flex-direction: row;
+						justify-content: center;
+						align-items:center;
+						color: #fff;
+						p 
+						{
+							padding: 8px 16px;
+							background-color: rgba(0, 0, 0, 0.7); 
+							
+						}
+
+						span 
+						{
+							background-image: none;
+							width: auto;
+							font-weight: 400;
+							padding: 5px 16px
+						}
+					}
+
+				}
+			}
+		}
+
+		@include _mixProjects;
+		@include _mixAbout;
+		@include _mixContant;
+
+	}
+}

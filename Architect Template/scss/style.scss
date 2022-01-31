@@ -1,0 +1,56 @@
+@import  "mixin/_mixHeader.scss";
+@import "mixin/_mixContent.scss";
+* {
+	box-sizing: border-box;
+	transition: .3s ease;
+}
+
+html {
+	font-size: 1rem;
+	scroll-padding-top: 9rem;
+	scroll-behavior: smooth;
+
+	&::-webkit-scrollbar
+	{
+		width: 3px;
+		height: 3px;
+
+	}
+
+	&::-webkit-scrollbar-track
+	{
+		background: transparent;
+	}
+
+	&::-webkit-scrollbar-thumb
+	{
+		background: #000;
+		border-radius: 2rem;
+	}
+}
+
+body {
+	padding: 0;
+	margin:  0;
+	overflow-x: hidden;
+	font-size: 1rem;
+	font-family: Verdana,sans-serif;
+	line-height: 1.5
+}
+
+@include _mixHeader;
+
+@include _mixContent;
+
+footer 
+{
+	text-align: center;
+	padding: 16px 0;
+	background: #000;
+	color: #fff;
+	div 
+	{
+		margin: 15px 0;
+
+	}
+}

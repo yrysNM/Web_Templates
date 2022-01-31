@@ -1,0 +1,59 @@
+@mixin _mixProjects{
+	.projHome 
+	{
+		padding: 16px 8px;
+		.topText
+		{
+			padding: 35px;
+			font-family: "Segoe UI",Arial, sans-serif;
+			p 
+			{
+				font-size: 25px;
+				font-weight: 400;
+				margin: 10px 0;
+			}
+			.line 
+			{
+				width: 100%;
+				height: 0.3px;
+				background-color: rgba(153, 153, 153, 0.1);
+
+			}
+		}
+
+		.bloks 
+		{
+			padding: 0 8px;
+			.temBlock
+			{
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: center;
+				.proj
+				{
+					width: 24%;
+					margin-bottom: 16px; 
+					padding: 0 8px;
+					.posHead
+					{
+						position: relative;
+						top: -10px;
+						.infoHouse
+						{
+							position: absolute;
+							padding: 8px 16px;
+							background-color: #000;
+							color: #fff;
+						}
+
+					}
+					img 
+					{
+						width: 100%;
+					}
+				}
+
+			}
+		}
+	}
+}
