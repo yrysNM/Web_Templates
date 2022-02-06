@@ -1,0 +1,25 @@
+@import "mixins/_mixHeader.scss";
+@import "mixins/_mixContent.scss";
+
+* {
+	box-sizing: border-box;
+	transition: 0.3s linear;
+}
+
+*, html, body
+{
+	box-sizing: inherit;
+}
+
+body{
+	margin: 0;
+	padding:0;
+	overflow-x: hidden;
+	font-family: "Loto", sans-serif;
+	font-size: 1rem;
+	line-height:  0.9rem;
+}
+
+
+@include _mixHeader;
+@include _mixContent;

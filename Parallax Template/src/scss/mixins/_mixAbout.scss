@@ -1,0 +1,90 @@
+@import "_mixSkills.scss";
+
+@mixin _mixAbout {
+	.about 
+	{
+		width: 980px;
+		margin: 0 auto;
+		padding: 64px 0;
+		color: #777;
+		& > .textTop
+		{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			h3 
+			{
+				font-size: 24px;
+				font-weight: 400;
+				text-transform: uppercase;
+			}
+		}
+
+		& > .text 
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			p
+			{
+
+				line-height: 1.8rem;
+
+			}
+
+		}
+
+		& > .blockAbout 
+		{
+			display: flex; 
+			flex-flow: row nowrap;
+
+			.leftBlock 
+			{
+				width: 49%;
+				padding: 12px 24px;
+				.topText
+				{
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					align-items:  center; 
+					color: #777;
+					font-weight: 600;
+					margin: 1.4rem 0;
+					i 
+					{
+						margin-right: 1rem; 
+						margin-bottom: 2.5px
+					}
+
+
+				}
+				img 
+				{
+					max-width: 100%;
+					height: auto; 
+					border-radius: 4px;
+					opacity: 0.6;
+					&:hover
+					{
+						opacity: 1;
+					}
+				}
+			}
+
+			.rightBlock 
+			{
+				width: 49%; 
+				padding: 12px 24px;
+				p 
+				{
+					color: #777;
+					line-height: 1.6rem;
+				}
+			}
+		}
+
+		@include _mixSkills;
+	}
+}

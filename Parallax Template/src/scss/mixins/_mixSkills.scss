@@ -1,0 +1,44 @@
+@mixin _mixSkills {
+	.skills
+	{
+		.topText 
+		{
+			display: flex;
+			flex-direction: column;
+			align-items:center;
+			margin: 16px 0;
+			h4 
+			{
+				font-weight: 400; 
+				font-size: 20px;
+				padding: 16px 0;
+			}
+		}
+
+		.infoSkill
+		{
+			.blockSkill
+			{
+				p
+				{
+					letter-spacing: 10px;
+					line-height: 1.8
+				}
+
+				.level
+				{
+					background: #f1f1f1;
+					color: #000;
+					.procent
+					{
+						/* width: 90%; */
+						background: #616161;
+						padding: 7px 8px;
+						color: #fff;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}
