@@ -1,0 +1,57 @@
+@mixin _mixPortfolio {
+	.portfolio {
+		.statistic {
+			padding-top: 16px;
+			/* padding: 16px 0; */
+			width: 100%;
+			height: 30%;
+			background-color: #616161;
+			display: flex;
+			flex-direction: row; 
+			justify-content: space-around; 
+			align-items: center;
+			.blockSta {
+				color: #fff;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				font-weight: 400; 
+				font-size: 1.2rem;
+				margin: 20px 0;
+			}
+		}
+
+		.imgPort {
+			span {
+				background-image: url("https://www.w3schools.com/w3images/parallax2.jpg");
+				background-size: cover; 
+				background-position: center center; 
+				background-repeat: no-repeat;
+				background-attachment: scroll;
+				display: inline-block;
+				width: auto;
+				min-height: auto;
+				position: relative;
+				.size {
+					min-height: 100vmin;
+					width: 100vw;
+				}
+
+				h1
+				{
+					position: absolute;
+					top:50%;
+					left: 50%;
+					margin-right: -50%;
+					transform: translate(-50%, -50%);
+					letter-spacing: 1rem;
+					font-size: 3rem;
+					font-weight: 200; 
+					color: #fff; 
+					font-family: "Loto", sans-serif;
+				}
+			}
+		}	 
+	}
+}
