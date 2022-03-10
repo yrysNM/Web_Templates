@@ -1,6 +1,7 @@
 @import "mixins/_mixHeader.scss";
 @import "mixins/_mixContent.scss";
 
+
 * {
 	box-sizing: border-box;
 	transition: 0.3s linear;
@@ -20,6 +21,11 @@ body{
 	line-height:  0.9rem;
 }
 
+a
+{
+	text-decoration: none; 
+	text-transform: none;
+}
 
 @include _mixHeader;
 @include _mixContent;

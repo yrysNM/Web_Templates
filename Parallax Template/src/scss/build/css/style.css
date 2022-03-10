@@ -13,6 +13,10 @@ body {
   font-size: 1rem;
   line-height: 0.9rem; }
 
+a {
+  text-decoration: none;
+  text-transform: none; }
+
 .navBar {
   width: 100%;
   position: fixed;
@@ -205,3 +209,188 @@ header {
     font-weight: 200;
     color: #fff;
     font-family: "Loto", sans-serif; }
+
+.content .work {
+  text-align: center;
+  padding: 16px 8px; }
+  .content .work .headerText h1 {
+    letter-spacing: 1px;
+    color: #898877;
+    font-weight: 200;
+    text-transform: uppercase; }
+  .content .work .headerText p {
+    color: #898877;
+    font-style: italic;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px; }
+  .content .work .imgs {
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; }
+    .content .work .imgs img {
+      margin: 20px auto 0 auto; }
+      .content .work .imgs img:hover {
+        opacity: 0.6; }
+  .content .work .btn {
+    margin-top: 64px;
+    background-color: #f2f2f2;
+    padding: 16px 8px;
+    border: none;
+    font-size: 1.2rem; }
+    .content .work .btn:hover {
+      background-color: #CCCCCC; }
+
+.content .contact {
+  margin-top: 64px; }
+  .content .contact .contentImg span {
+    background-image: url("https://www.w3schools.com/w3images/parallax3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    display: inline-block;
+    width: auto;
+    min-height: auto;
+    position: relative;
+    opacity: 0.7; }
+    .content .contact .contentImg span .size {
+      width: 100vw;
+      min-height: 100vmin; }
+    .content .contact .contentImg span h1 {
+      position: absolute;
+      text-transform: uppercase;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      letter-spacing: 1rem;
+      font-size: 3rem;
+      font-weight: 200;
+      font-family: "Loto", sans-serif; }
+  .content .contact .contactText {
+    margin-top: 64px;
+    text-align: center;
+    padding: 16px 8px; }
+    .content .contact .contactText h1 {
+      letter-spacing: 1px;
+      color: #988877;
+      font-weight: 200;
+      text-transform: uppercase; }
+    .content .contact .contactText p {
+      color: #988877;
+      font-style: italic;
+      margin-left: auto;
+      margin-right: auto;
+      width: 400px; }
+  .content .contact .infoContact {
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    position: relative; }
+    .content .contact .infoContact .map {
+      position: absolute;
+      left: 100px;
+      border-radius: 3px;
+      box-shadow: 1px 2px 5px #000;
+      margin-right: 5px; }
+    .content .contact .infoContact .forms {
+      position: absolute;
+      top: 0;
+      left: 400px;
+      transform: translete(-50%, -50%);
+      width: 55%;
+      margin-left: 15px;
+      color: #988877; }
+      .content .contact .infoContact .forms .placePhoneEmail {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 1.2rem;
+        margin: 10px 0; }
+        .content .contact .infoContact .forms .placePhoneEmail i {
+          padding-right: 10px;
+          font-size: 1.31em; }
+        .content .contact .infoContact .forms .placePhoneEmail .txt {
+          padding-left: 10px; }
+      .content .contact .infoContact .forms p {
+        margin-top: 30px;
+        font-size: 1rem;
+        font-style: italic;
+        font-family: "Loto", sans-serif; }
+      .content .contact .infoContact .forms form {
+        margin-top: 30px; }
+        .content .contact .infoContact .forms form .nameSur {
+          display: flex;
+          flex-direction: row; }
+          .content .contact .infoContact .forms form .nameSur .name {
+            margin-right: 10px;
+            border: 0.1px solid #988877;
+            width: 50%; }
+            .content .contact .infoContact .forms form .nameSur .name input {
+              width: 100%;
+              border: none;
+              background: transparent;
+              padding: 8px 10px; }
+              .content .contact .infoContact .forms form .nameSur .name input:focus {
+                outline: none; }
+        .content .contact .infoContact .forms form .message {
+          margin-right: 10px;
+          border: 0.1px solid #988877;
+          margin-top: 10px; }
+          .content .contact .infoContact .forms form .message input {
+            width: 100%;
+            border: none;
+            background: transparent;
+            padding: 8px 10px; }
+            .content .contact .infoContact .forms form .message input:focus {
+              outline: none; }
+        .content .contact .infoContact .forms form .submit {
+          margin: 16px 0;
+          float: right;
+          padding: 16px 8px;
+          background: black;
+          color: #fff;
+          border: none;
+          text-transform: uppercase;
+          text-align: center;
+          letter-spacing: 1.5px; }
+          .content .contact .infoContact .forms form .submit i {
+            margin-right: 5px; }
+          .content .contact .infoContact .forms form .submit:hover {
+            background: #c4bbb1;
+            color: #000; }
+
+.content footer .pos {
+  position: relative; }
+  .content footer .pos .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 600px;
+    width: 100%;
+    padding: 34px 0;
+    background: #000;
+    color: #fff;
+    opacity: 0.6; }
+    .content footer .pos .footer .top {
+      cursor: pointer;
+      width: 10%;
+      padding: 16px;
+      background: #fff;
+      text-align: center;
+      color: #000;
+      margin: 20px 0; }
+      .content footer .pos .footer .top a {
+        color: #000; }
+      .content footer .pos .footer .top:hover {
+        opacity: 0.7; }
+    .content footer .pos .footer:hover {
+      opacity: 1; }

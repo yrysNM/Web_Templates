@@ -6,6 +6,11 @@ window.onscroll = function() {
 function myFunction() {
 	let navBar = document.getElementById("myNavBar");
 	let tagA = document.querySelectorAll("#chColor");
+	let top = document.querySelector("#top");
+
+	top.addEventListener("click", (e) => {
+		window.scrollTo(0, 0);
+	});
 
 	if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 		navBar.className  = "navBar";
@@ -20,6 +25,8 @@ function myFunction() {
 	}
 
 }
+
+
 
 
 

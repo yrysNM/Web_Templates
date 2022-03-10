@@ -1,9 +1,10 @@
 @import "_mixAbout.scss";
-
+@import "_mixFooter.scss";
 
 @mixin _mixContent {
 	.content
 	{
+
 		.topContent 
 		{
 			& > span 
@@ -46,5 +47,7 @@
 		}
 
 		@include _mixAbout;
+
+		@include _mixFooter;
 	}
 }

@@ -1,5 +1,7 @@
 @import "_mixSkills.scss";
 @import "_mixPortfolio.scss";
+@import "_mixMyWork.scss";
+@import  "_mixContact.scss";
 
 @mixin _mixAbout {
 	.about 
@@ -90,4 +92,8 @@
 
 	}
 		@include _mixPortfolio;
+
+		@include _mixMyWork;
+
+		@include _mixContact;
 }
