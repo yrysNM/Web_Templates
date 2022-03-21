@@ -26,7 +26,7 @@ ul, li {
   display: block; }
 
 section, footer {
-  padding-top: 190px; }
+  padding-top: 130px; }
 
 header {
   padding-top: 54px;
@@ -139,3 +139,51 @@ header {
     background: #D1D1D1;
     margin-right: 12px;
     cursor: pointer; }
+
+.collection h2 {
+  font-size: 40px; }
+
+.collection .btn {
+  margin-top: 65px;
+  cursor: pointer;
+  padding: 22px 50px;
+  width: 243px;
+  border: 1px solid #6E9C9F;
+  text-align: center;
+  color: #6E9C9F;
+  font-size: 18px;
+  background: none;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 53.5%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); }
+
+.blockClothes {
+  display: flex; }
+
+.clothes .img {
+  margin-top: 92px;
+  margin-right: 24px;
+  background-image: url("../../../img/t-shirt.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 350px;
+  height: 480px;
+  display: inline-block; }
+
+.clothes .description {
+  padding-top: 24px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700; }
+
+.clothes .cost {
+  text-align: center; }
+  .clothes .cost .oldCost {
+    color: red;
+    text-decoration-line: line-through; }
+  .clothes .cost span {
+    color: #9C9C9C; }

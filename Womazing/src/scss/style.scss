@@ -1,4 +1,6 @@
 @import "mixins/header.scss"; 
+@import "mixins/collection.scss";
+
 
 body 
 {
@@ -39,8 +41,10 @@ ul, li {
 
 section, footer 
 {
-	padding-top: 190px;
+	padding-top: 130px;
 }
 
 
 @include header;
+
+@include collection;

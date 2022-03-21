@@ -1,0 +1,75 @@
+$blackgreen: #6E9C9F;
+
+@mixin collection {
+	.collection{
+		 h2 
+		{
+			font-size: 40px;
+		}
+
+		.btn 
+		{
+			margin-top: 65px;
+			cursor: pointer;
+			padding: 22px 50px;
+			width: 243px;
+			border:1px solid  $blackgreen; 
+			text-align: center;
+			color: $blackgreen; 
+			font-size: 18px;
+			background: none;
+			text-align: center;
+			position: relative;
+			top: 50%; 
+			left: 53.5%; 
+			margin-right: -50%; 
+			transform: translate(-50%, -50%);
+		}
+	}
+
+
+	.blockClothes 
+	{
+		display: flex; 
+
+	}
+
+	.clothes 
+	{
+		.img 
+		{
+			margin-top: 92px;
+			margin-right: 24px;
+			background-image: url('../../../img/t-shirt.jpg');
+			background-repeat: no-repeat;
+			background-size: cover; 
+			background-position: center center; 
+			width: 350px; 
+			height: 480px;
+			display: inline-block;
+		}
+
+
+
+		.description
+		{
+			padding-top: 24px; 
+			text-align: center;
+			font-size: 20px;
+			font-weight: 700;
+		}
+
+		.cost 
+		{
+			text-align: center;
+			.oldCost {
+				color: red;
+				text-decoration-line: line-through;
+			}
+			span
+			{
+				color: #9C9C9C;
+			}
+		}
+	}
+}
