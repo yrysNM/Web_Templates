@@ -1,0 +1,201 @@
+$blackgreen: #6E9C9F;
+$c_black: #000;
+
+
+@mixin header {
+	header {
+		padding-top: 54px; 
+		width: auto; 
+		height: auto; 
+		display: block;
+		background: linear-gradient(90deg, #fff 57%, #F1EADC 43%);
+
+		nav 
+		{
+			display: flex; 
+			align-items: center;
+			justify-content: space-around;
+			position: relative;
+			img {
+				margin-right: 15px;
+			}
+
+			.headText a{
+				text-transform: uppercase;
+
+			}
+
+			.left {
+				display: flex;
+				align-items: center;
+				margin-left: auto;
+				a {
+					margin-right: 67px;
+				}
+			}
+
+		}
+
+		.menu
+		{
+			display: flex; 
+			position: absolute;
+			top: 50%;
+			left: 50%; 
+			margin-right: -50%; 
+			transform: translate(-50%, -50%);
+
+
+			li {
+				margin-right: 45px;
+			}
+
+			li:nth-child(1) a {
+
+					font-weight: 700; 
+					color: $blackgreen;
+			}
+
+			li a {
+				text-decoration: none;
+				font-size: 15px; 
+				letter-spacing: 0.02em;
+				color: $c_black;
+			}
+		}
+
+
+
+
+		.groupoffer
+		{
+			margin-top: 200px;
+			display: flex;
+
+			.offer
+			{
+				width: 50%;
+
+				& > h1 
+				{
+					font-size: 55px; 
+					letter-spacing: 0.02em;
+
+				}
+
+				& > .txt {
+					font-size: 16px; 
+					letter-spacing: 0.02em;
+					margin: 34px 0;
+					text-align: right;
+					margin-bottom: 60px;
+				}
+
+				.navigationToShop
+				{
+					display: flex;
+					justify-content: center;
+					.arrowDown 
+					{
+						padding: 18px 26px;
+						background: rgba(110, 156, 159, 0.1);
+
+					}
+
+					.btn 
+					{
+						button
+						{
+							cursor: pointer;
+							padding: 24px 95px;
+							background: $blackgreen; 
+							border: none; 
+							text-align: center;
+							color: #fff; 
+							font-size: 18px;
+
+						}
+					}
+				}
+			}
+
+			.offerImg {
+
+				.groupImg {
+					.pos1 {
+						position: absolute;
+					    top: 25%;
+					    right: 17%;
+					}
+
+					.pos2 {
+						position: absolute;
+						top: 35%;
+						right: 10%;
+					}
+				}
+				.girl1{
+				    position: relative;
+				    width: 350px;
+
+				}
+
+
+
+				.girl3 {
+					position: relative;
+/* 					top: 30%; 
+					right: 22%; */
+					z-index: 20;
+				}
+
+				.girl2 {
+					position: relative;
+					/* top: 20%;  */
+					margin-top: 184px;
+				   	margin-left: 20px;
+					z-index: 20;
+				}
+			}
+
+		}
+
+	}
+
+
+
+
+
+	.slidedot
+	{
+		display: flex; 
+		justify-content: center;
+		margin-top: 125px;
+
+
+		& > .dot1 {
+			width: 30px;
+			height: 4px;
+			background: #D1D1D1;
+			margin-right: 12px;
+			cursor: pointer;
+		}
+
+		& > .dot2 {
+			width: 30px;
+			height: 4px;
+			background: $c_black;
+			margin-right: 12px;
+			cursor: pointer;
+		}
+
+		& > .dot3 {
+			width: 30px;
+			height: 4px;
+			background: #D1D1D1;
+			margin-right: 12px;
+			cursor: pointer;
+		}
+
+	}
+}

@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  color: #000;
+  letter-spacing: 0.02em; }
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  color: #000; }
+
+.container {
+  width: 1046px;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  display: block; }
+
+section, footer {
+  padding-top: 190px; }
+
+header {
+  padding-top: 54px;
+  width: auto;
+  height: auto;
+  display: block;
+  background: linear-gradient(90deg, #fff 57%, #F1EADC 43%); }
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative; }
+    header nav img {
+      margin-right: 15px; }
+    header nav .headText a {
+      text-transform: uppercase; }
+    header nav .left {
+      display: flex;
+      align-items: center;
+      margin-left: auto; }
+      header nav .left a {
+        margin-right: 67px; }
+  header .menu {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); }
+    header .menu li {
+      margin-right: 45px; }
+    header .menu li:nth-child(1) a {
+      font-weight: 700;
+      color: #6E9C9F; }
+    header .menu li a {
+      text-decoration: none;
+      font-size: 15px;
+      letter-spacing: 0.02em;
+      color: #000; }
+  header .groupoffer {
+    margin-top: 200px;
+    display: flex; }
+    header .groupoffer .offer {
+      width: 50%; }
+      header .groupoffer .offer > h1 {
+        font-size: 55px;
+        letter-spacing: 0.02em; }
+      header .groupoffer .offer > .txt {
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        margin: 34px 0;
+        text-align: right;
+        margin-bottom: 60px; }
+      header .groupoffer .offer .navigationToShop {
+        display: flex;
+        justify-content: center; }
+        header .groupoffer .offer .navigationToShop .arrowDown {
+          padding: 18px 26px;
+          background: rgba(110, 156, 159, 0.1); }
+        header .groupoffer .offer .navigationToShop .btn button {
+          cursor: pointer;
+          padding: 24px 95px;
+          background: #6E9C9F;
+          border: none;
+          text-align: center;
+          color: #fff;
+          font-size: 18px; }
+    header .groupoffer .offerImg .groupImg .pos1 {
+      position: absolute;
+      top: 25%;
+      right: 17%; }
+    header .groupoffer .offerImg .groupImg .pos2 {
+      position: absolute;
+      top: 35%;
+      right: 10%; }
+    header .groupoffer .offerImg .girl1 {
+      position: relative;
+      width: 350px; }
+    header .groupoffer .offerImg .girl3 {
+      position: relative;
+      /* 					top: 30%; 
+					right: 22%; */
+      z-index: 20; }
+    header .groupoffer .offerImg .girl2 {
+      position: relative;
+      /* top: 20%;  */
+      margin-top: 184px;
+      margin-left: 20px;
+      z-index: 20; }
+
+.slidedot {
+  display: flex;
+  justify-content: center;
+  margin-top: 125px; }
+  .slidedot > .dot1 {
+    width: 30px;
+    height: 4px;
+    background: #D1D1D1;
+    margin-right: 12px;
+    cursor: pointer; }
+  .slidedot > .dot2 {
+    width: 30px;
+    height: 4px;
+    background: #000;
+    margin-right: 12px;
+    cursor: pointer; }
+  .slidedot > .dot3 {
+    width: 30px;
+    height: 4px;
+    background: #D1D1D1;
+    margin-right: 12px;
+    cursor: pointer; }

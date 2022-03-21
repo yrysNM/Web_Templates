@@ -1,0 +1,46 @@
+@import "mixins/header.scss"; 
+
+body 
+{
+	margin: 0; 
+	padding: 0;
+	overflow-x: hidden;
+	font-size: 1rem;
+	font-family: "Raleway", sans-serif;
+	color: #000;
+	letter-spacing:  0.02em;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0; 
+	color: #000;
+}
+
+
+.container 
+{
+	width: 1046px; 
+	margin: 0 auto;
+
+}
+
+a {
+	text-decoration: none; 
+	color: #000;
+}
+
+ul, li {
+	padding: 0; 
+	margin: 0;
+	display: block;
+}
+
+section, footer 
+{
+	padding-top: 190px;
+}
+
+
+@include header;
