@@ -187,3 +187,31 @@ header {
     text-decoration-line: line-through; }
   .clothes .cost span {
     color: #9C9C9C; }
+
+.qualitySpped h2 {
+  font-size: 40px; }
+
+.blockInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap; }
+
+.compo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 0 0 250px; }
+  .compo img {
+    width: 61px;
+    height: 61px;
+    margin-top: 92px; }
+  .compo .des {
+    font-size: 25px;
+    padding-top: 37px;
+    font-weight: 500; }
+  .compo .text {
+    padding-top: 25px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4em; }
