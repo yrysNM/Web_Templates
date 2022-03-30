@@ -215,3 +215,46 @@ header {
     margin: 0;
     font-size: 14px;
     line-height: 1.4em; }
+
+.command h2 {
+  font-size: 40px; }
+
+.slideImg {
+  display: flex;
+  align-item: center; }
+  .slideImg .leftblock {
+    display: flex; }
+    .slideImg .leftblock .leftArrow {
+      position: relative;
+      right: 66px;
+      top: 50%;
+      background-image: url("../../../img/icons/leftArrow.svg");
+      background-repeat: no-repeat;
+      width: 28px;
+      height: 14px;
+      display: block; }
+    .slideImg .leftblock img {
+      margin-left: -33px; }
+    .slideImg .leftblock .rightArrow {
+      position: relative;
+      left: 31px;
+      top: 50%;
+      background-image: url("../../../img/icons/rightArrow.svg");
+      background-repeat: no-repeat;
+      width: 28px;
+      height: 14px;
+      display: block; }
+  .slideImg .rightblock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 65px; }
+    .slideImg .rightblock span {
+      font-size: 1.3rem;
+      font-weight: 500;
+      line-height: 1.4em; }
+    .slideImg .rightblock p {
+      font-size: 17px; }
+    .slideImg .rightblock a {
+      color: #6E9C9F;
+      margin-top: 15px; }

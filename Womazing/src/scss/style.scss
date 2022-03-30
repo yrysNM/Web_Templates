@@ -1,6 +1,7 @@
 @import "mixins/header.scss"; 
 @import "mixins/collection.scss";
 @import "mixins/infoQuilitySpeed.scss";
+@import "mixins/teamSection.scss";
 
 body 
 {
@@ -50,3 +51,5 @@ section, footer
 @include collection;
 
 @include infoQuilitySpeed;
+
+@include teamSection;

@@ -1,0 +1,79 @@
+$blackgreen: #6E9C9F;
+$c_black: #000;
+
+
+@mixin teamSection {
+	.command
+	{
+		h2
+		{
+			font-size: 40px;
+		}
+	}
+
+
+	.slideImg
+	{	
+		display: flex; 
+		align-item: center;
+
+		.leftblock
+		{
+			display: flex;
+			.leftArrow
+			{
+				position:  relative;
+				right: 66px;
+				top: 50%;
+				background-image: url("../../../img/icons/leftArrow.svg"); 
+				background-repeat: no-repeat;
+				width: 28px ; 
+				height: 14px;
+				display: block;
+			}
+
+			img 
+			{
+				margin-left: -33px;
+			}
+
+			.rightArrow 
+			{
+				position: relative;
+				left: 31px; 
+				top: 50%;
+				background-image: url("../../../img/icons/rightArrow.svg"); 
+				background-repeat: no-repeat; 
+				width: 28px; 
+				height: 14px; 
+				display: block;
+
+			}
+		}
+
+
+		.rightblock 
+		{
+			display: flex; 
+			flex-direction: column;
+			justify-content: center;
+			margin-left: 65px;
+			span 
+			{
+				font-size: 1.3rem; 
+				font-weight: 500;
+				line-height: 1.4em;
+			}
+
+			p
+			{
+				font-size: 17px;
+			}
+			a 
+			{
+				color: $blackgreen;
+				margin-top: 15px;
+			}
+		}
+	}
+}
