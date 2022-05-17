@@ -1,0 +1,57 @@
+.recall {
+    padding-bottom: 71px;
+
+    &-block {
+        width: 100%;
+        min-height: 264px;
+        margin-top: 100px;
+        border-bottom: 1px solid #f6f6f6;
+        &:nth-child(2) {
+            margin-top: 70px;
+        }
+        &:last-child {
+            border: none;
+        }
+
+        &__wrapper {
+
+            display: flex; 
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__circleImg {
+            width: 169px;
+            height: 169px;
+            border-radius: 100%; 
+            margin-right: 60px;
+        }
+
+        &__userInfo {
+            display: flex; 
+            flex-direction: column;
+            justify-content: space-around;
+
+        }
+
+        &__userName {
+            font-size: 18px;
+            font-weight: 500;
+            color: #0D0D0D;
+        }
+
+        &__sumMara {
+            font-size: 14px;
+            font-weight: 300;
+            color: #646464;
+        }
+
+        &__descr {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 400;
+            color: #0D0D0D;
+        }
+    }
+
+}

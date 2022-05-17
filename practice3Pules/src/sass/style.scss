@@ -6,6 +6,7 @@
 .container {
     max-width: 950px;
     margin: 0 auto;
+    position: relative;
 }
 
 @import "blocks/promo";
@@ -13,3 +14,10 @@
 @import "blocks/buttons";
 @import "blocks/titleTxts";
 @import "blocks/advantage";
+@import "blocks/consultation";
+@import "blocks/forms";
+@import "blocks/carousel";
+@import "blocks/catalog";
+@import "blocks/recall";
+@import "blocks/footer";
+@import "blocks/modal";
