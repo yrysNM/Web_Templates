@@ -1,0 +1,60 @@
+.services {
+    padding: 82px 0 64px 0;
+    background: none;
+
+    .clService {
+        color: #E5A985;
+    }
+
+    &__blocks {
+        margin-top: 51px;
+
+        display: flex;
+        justify-content: space-between;
+
+        
+    }
+    &__block1 {
+        width: 351px;
+        height: 485px;
+        background-color: #FAE3D8;
+        border-radius: 20px;
+        
+    }
+    
+    .block2 {
+        min-width: 387px;
+        height: 535px;
+        background: $main-color;
+        box-shadow: 10px 10px 35px 2px rgba(89, 56, 14, 0.1);
+        border-radius: 20px;
+        img {
+            width: 100%;
+        }
+    }
+    .txtWhite {
+        color: #fff;
+    }
+
+    &__img {
+        border-radius: 20px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__descr {
+        // position: absolute;
+        // bottom: -110px;
+        // z-index: -1;
+        
+        padding: 25px 55px 30px 55px;
+        font-family: "Nunito Sans";
+        font-weight: 400;
+        font-size: 24px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        border-radius: 20px;
+    }
+}
