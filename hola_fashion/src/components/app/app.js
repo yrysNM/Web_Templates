@@ -24,9 +24,11 @@ class App extends Component {
     onSubmitValue = (e, items) => {
         e.preventDefault();
         this.setState({data: items});
+
     }
 
     render() {
+        
         return(
             <div className="app">
                 <Header />

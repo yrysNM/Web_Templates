@@ -29,10 +29,20 @@ class AppContacts extends Component {
         });
     };
 
+    setValue = () => {
+        this.setState({
+            firstName: "", 
+            secondName: "",
+            email: "", 
+            subject: "", 
+        });
+    }
+
 
     render() {
         
         const {onSubmitValue} = this.props;
+        const {firstName, secondName, email, subject} = this.state;
 
         return (
             <section className="product contacts">
@@ -66,15 +76,15 @@ class AppContacts extends Component {
                                 <div className="contacts__form">
                                     <form action=".">
                                         <div className="contacts__form_name">
-                                            <input type="text" name="firstName" placeholder="First name" onChange={this.getValue}/>
-                                            <input type="text" name="secondName" placeholder="Second name" onChange={this.getValue}/>
+                                            <input type="text" name="firstName" placeholder="First name" value={firstName} onChange={this.getValue}/>
+                                            <input type="text" name="secondName" placeholder="Second name" value={secondName} onChange={this.getValue}/>
                                         </div>
         
                                         <div className="contacts__form_otherinputs">
-                                            <input type="email" name="email" placeholder="Email" onChange={this.getValue}/>
-                                            <input type="text" name="subject" placeholder="Subject" onChange={this.getValue}/>
+                                            <input type="email" name="email" placeholder="Email" value={email} onChange={this.getValue}/>
+                                            <input type="text" name="subject" placeholder="Subject" value={subject} onChange={this.getValue}/>
         
-                                            <button type="submit" onClick={(e) => {e.preventDefault(); onSubmitValue(e, this.state)}}>Send Message</button>
+                                            <button type="submit" onClick={(e) => {onSubmitValue(e, this.state); this.setValue()}}>Send Message</button>
                                         </div>
         
         
