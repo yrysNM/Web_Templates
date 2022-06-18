@@ -1,4 +1,5 @@
 import Slider from "react-slick";
+import { Fade } from "react-reveal";
 import prevArrow from "../../icons/prevArrow.svg";
 import nextArrow from "../../icons/nextArrow.svg";
 import imgSlide from "../../img/imgSlide.png";
@@ -41,11 +42,16 @@ const AppProduct = () => {
         <section className="product">
             <div className="container">
                 <div className="product_header">
-                    <div className="product_title">
-                        <span>Product</span>
-                    </div>
+                    <Fade right>
+                        <div className="product_title">
 
-                    <h2 className="product_subTitle">Hola Fashion - Newest Designers, Lowest Prices</h2>
+                            <span>Product</span>
+                        </div>
+                    </Fade>
+                    <Fade right>
+
+                        <h2 className="product_subTitle">Hola Fashion - Newest Designers, Lowest Prices</h2>
+                    </Fade>
                 </div>
 
                 <div className="carousel">

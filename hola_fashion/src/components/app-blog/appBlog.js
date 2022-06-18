@@ -1,3 +1,5 @@
+import { Fade } from "react-reveal";
+
 import person1 from "../../img/people/person1.png";
 import person2 from "../../img/people/person2.png";
 import person3 from "../../img/people/person3.png";
@@ -10,11 +12,18 @@ const AppBlog = () => {
         <section className="product blog">
             <div className="container">
                 <div className="product_header">
-                    <div className="product_title">
-                        <span>Blog</span>
-                    </div>
+                    <Fade right>
 
-                    <h2 className="product_subTitle blog__subtitle">Hola Fashion - Newest Designers, Lowest Prices</h2>
+                        <div className="product_title">
+
+                            <span>Blog</span>
+                        </div>
+                    </Fade>
+
+                    <Fade right>
+
+                        <h2 className="product_subTitle blog__subtitle">Hola Fashion - Newest Designers, Lowest Prices</h2>
+                    </Fade>
                 </div>
 
                 <div className="blog__people">

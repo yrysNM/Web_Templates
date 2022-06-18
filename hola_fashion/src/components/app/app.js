@@ -12,8 +12,18 @@ class App extends Component {
         super(props);
 
         this.state = {
-
+            data: [{
+                firstName: "", 
+                secondName: "",
+                email: "", 
+                subject: "", 
+            }]
         };
+    }
+    
+    onSubmitValue = (e, items) => {
+        e.preventDefault();
+        this.setState({data: items});
     }
 
     render() {
@@ -29,7 +39,7 @@ class App extends Component {
 
                 <AppBlog />
 
-                <AppContacts />
+                <AppContacts onSubmitValue= {this.onSubmitValue}/>
             </div>
         );
     }
