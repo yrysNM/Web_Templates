@@ -1,0 +1,110 @@
+.contacts {
+    padding-top: 85px;
+    background: none;
+    position: relative;
+
+    &__base {
+        background: $main-color;
+        min-height: 833px;
+        position: relative;
+        margin-top: 85px;
+        z-index: 1;
+        &_temp {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+    }
+
+    &__subtitle {
+        width: 575px;
+        margin: 0 auto;
+        font-family: 'Playfair Display';
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 139%;
+        padding-top: 42px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 81px;
+        flex-wrap: wrap;
+        &_img {
+            position: absolute;
+            z-index: -1;
+            bottom: -75px;
+            left: 0;
+        }
+    }
+
+    &__form {
+        &_name {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            input {
+                width: 50%;
+                padding: 15px 0 15px 25px;
+                border: none;
+                background: rgba(225, 225, 194, 0.7);
+                border-radius: 8px;
+                font-family: 'Nunito Sans';
+                font-weight: 400;
+                font-size: 20px;
+                color: #FFFFFF;
+
+                &:nth-child(1) {
+                    color: #FFFFFF;
+                    margin-right: 10px;
+                }
+
+                &::placeholder {
+                    color: #fff;
+                }
+            }
+        }
+
+        &_otherinputs {
+            width: 100%;
+
+            input {
+                margin-top: 27px;
+                background: rgba(225, 225, 194, 0.7);
+                border-radius: 8px;
+                padding: 15px 0 15px 25px;
+                width: 100%;
+                color: #fff;
+                border: none;
+                font-size: 20px;
+                font-weight: 400;
+
+                &::placeholder {
+                    color: #fff;
+                }
+            }
+
+            button {
+                margin-top: 27px;
+                width: 100%;
+                padding: 15px 0;
+                text-align: center;
+                color: #fff;
+                background: #E5A985;
+                border-radius: 8px;
+                border: none;
+                font-size: 20px;
+                font-weight: 700;
+                cursor: pointer;
+            }
+        }
+    }
+}

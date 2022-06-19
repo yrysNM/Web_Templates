@@ -1,0 +1,23 @@
+@import "./base/variable";
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: "Pass through", "Poppins";
+}
+
+.container {
+    width: 1310px;
+    margin: 0 auto; 
+
+}
+
+@import "./blcok/header";
+@import "./blcok/appPromo";
+@import "./blcok/appProduct";
+@import "./blcok/carousel"; 
+@import "./blcok/appServices.scss";
+@import "./blcok/blog";
+@import "./blcok/appContacts";
+@import "./blcok/media";

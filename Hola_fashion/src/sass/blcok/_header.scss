@@ -1,0 +1,51 @@
+.header {
+    padding: 36px 0 39px 0; 
+    min-height: 110px; 
+    position: sticky;
+    &__line {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        font-family: "Popins", sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        a {
+            text-decoration: none;
+            color: $main-color;
+        }
+    }
+    
+    &__list {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        padding: 0; 
+        margin: 0;
+        li {
+            padding-right: 76px; 
+
+            &:last-child {
+                padding-right: 0; 
+                
+            }
+        }
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: 20px;
+        text-decoration: none;
+        color: #000; 
+        font-family: 'Nunito Sans';
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+
+}
